@@ -20,7 +20,11 @@ public class EmployeeWage {
 		case 0:
 			System.out.println("Employee is present");
 			System.out.println("Employee wage=" + fullDayHour * wagePerHour);
-			System.out.println("Employee monthly wage=" + fullDayHour * wagePerHour * workingDayPerMonth);
+			int totalHourPerMonth = 1;
+			while (totalHourPerMonth <= 100) {
+				totalHourPerMonth++;
+			}
+			System.out.println("Employee monthly wage=" + totalHourPerMonth * wagePerHour);
 			break;
 
 		case 1:
@@ -33,6 +37,8 @@ public class EmployeeWage {
 			System.out.println("Employee is absent");
 			System.out.println("Employee wage=0");
 			break;
+
 		}
+
 	}
 }
